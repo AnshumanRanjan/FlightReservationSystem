@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>Fight Reservation System</h2>
+
+<p>Please select your preference </p>
+
+<br> 
+
+<form id="flightpref" action="http://localhost:9090/flight/search">
+  <label for="flight_no">Flight-Num</label>
+  <select id="numb" name="numb">
+    <option value="123">DUB-LHR</option>
+    <option value="234">DUB-CDG</option>
+    <option value="456">DUB-NYU</option>
+    <option value="567">DUB-IAD</option>
+  </select>
+  <br> 
+ <label for="start">Start date:</label>
+ <input type="date" id="start" name="tripdate"
+       value="2020-11-02"
+       min="2020-01-01" max="2021-12-31">
+  <br> 
+  
+ <label for="SeatSelection">Seat Selection</label>
+  <select id="seatSelection" name="seatSelection">
+    <option value="FRONT">FRONT</option>
+    <option value="MID">MID</option>
+    <option value="REAR">REAR</option>
+  </select>
+  <br> 
+  <label for="seatType">Seat Type</label>
+  <select id="seatType" name="seatType">
+    <option value="WINDOW">WINDOW</option>
+    <option value="AISL">AISL</option>
+    <option value="MIDDLE">MIDDLE</option>
+  </select>
+  <br> 
+  <label for="seatcount">Number of Seats (1-10):</label>
+  <input type="number" id="seatcount" name="NumberofTickets"
+       min="1" max="10">
+  <br> 
+  <br> 
+  <input type="Submit" value="Search">
+</form>
+
+</body>
+
+</html>
