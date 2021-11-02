@@ -91,7 +91,7 @@ public class FlightSeatReservation {
 	}
 	
 	
-	/*  method overrie to geenrate reserved Seats */ 
+	/*  method overrides to generate reserved Seats */ 
 	
     public  String[][] returnSeatavailibility(String[] seatNo) {
 		
